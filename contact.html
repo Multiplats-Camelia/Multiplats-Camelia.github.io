@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.multiplats-camélia.fr</title>
+    <script src="js/main.js"  ></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <h1>Multiplats Camélia</h1>
+        
+        <div class="onglets">
+            <a href="index.html"> Accueil </a>
+            <a href="menu.html"> Notre menu </a>
+            <a href="contact.html"> Contact </a>
+        </div>
+    </nav>
+    
+    <header>
+        <h1>Cuisine orientale</h1>
+        <h4>MULTIPLATS CAMELIA TRAITEUR</h4>
+        <button><a href="#footer">Parcourir</a>  </button>
+    </header>
+
+    <div id="header_top" > Notre restaurant à votre service </div>
+    
+
+    <section class="main" id="products">
+
+        
+        <h1>Rendez-vous à notre place !</h1>
+        <div>
+            
+            <h2>   <a target="_blank" id="lien_maps" href="https://www.google.com/maps/place/61+Av.+Michel+Jourdan,+06150+Cannes/@43.5534724,6.9714251,17z/data=!3m1!4b1!4m5!3m4!1s0x12ce825b46a0c53b:0x667bee12f7302705!8m2!3d43.5534724!4d6.9736138" >
+                Adresse</span>
+                    </a>  <span class="souligne"></span> :   Avenue Michel Jourdan 61, 06150 Cannes, France <br>
+               <a id="le_numero"><span class="souligne"> Numéro</span></a>  :   04 93 47 27 90
+            </h2>
+        </div>
+
+        <div id="carte_bloc">
+                <a href="https://www.facebook.com/photo/?fbid=1744875515559524&set=pb.100064064619090.-2207520000.." target="_blank" class="lien_contact"><img id="carte1" src="img/commentaire_sejour.png" alt=""></a>
+                <a target="_blank" class="lien_contact" href="https://www.google.com/maps/place/61+Av.+Michel+Jourdan,+06150+Cannes/@43.5534724,6.9714251,17z/data=!3m1!4b1!4m5!3m4!1s0x12ce825b46a0c53b:0x667bee12f7302705!8m2!3d43.5534724!4d6.9736138"><img id="carte2"  src="img/location.png" target alt=""> </a> 
+        </div>
+
+        <h1 id="titre_etoiles">
+            Votre avis compte !
+        </h1>
+        
+        <div id="bloc_etoiles">
+            <img id="etoiles" src="img/etoiles.webp" alt="">
+            
+        </div>
+
+
+    <div id="box">
+
+       
+        <div id="carrousel">
+
+            <div id="container"></div>
+            <img src="img/fleche_g.png" class="bouton" id="d">
+            <img src="img/fleche_g.png" class="bouton" id="g">
+            
+           
+            <script>
+                document.body.onload=function(){
+                    nbr=7;
+                    p=0;
+                    container=document.getElementById("container");
+                    g=document.getElementById("g");
+                    d=document.getElementById("d");
+                    container.style.width=(800*nbr)+"px";
+                    for(i=1;i<=nbr;i++){
+                        div=document.createElement("div");
+                        div.className="photo";
+                        div.style.backgroundImage="url('img/commentaire"+i+".png')";
+                        container.appendChild(div);
+                    }        
+                }
+
+                d.onclick=function(){
+                    if(p>-nbr+1)
+                    p--;
+                    container.style.transform="translate("+p*800+"px)";
+                    container.style.transition="all 0.5s ease";
+                }
+
+                g.onclick=function(){
+                    if(p<0)
+                    p++;
+                    container.style.transform="translate("+p*800+"px)";
+                    container.style.transition="all 0.5s ease";
+                }   
+            </script>
+
+        </div>
+
+            <div id="img_chef">
+                <img src="img/commentaire8.png"> 
+
+            </div>
+    </div>
+
+
+    
+  
+  
+
+    </section>
+
+    <div class="wrapper_com">
+  
+        <div class="gallery_com">
+  
+          <div class="image" data-name="camera"><span><img src="img/com3.png" alt=""></span></div>
+          <div class="image" data-name="shoe"><span><img src="img/com4.png" alt=""></span></div>
+          <div class="image" data-name="watch"><span><img src="img/com5.png" alt=""></span></div>
+          <div class="image" data-name="watch"><span><img src="img/com6.png" alt=""></span></div>
+  
+          
+        </div>
+  
+      <div>
+  
+        <div class="image" data-name="bag"><span><img src="img/com1.png" alt=""></span></div>
+        <div class="image" data-name="headphone"><span><img src="img/com2.png" alt=""></span></div>
+  
+        
+      </div>
+        
+  
+    </div>
+
+    
+    <footer id="footer">
+        
+        <div id="titre_service" >
+            <h1>Suivez nous </h1>
+        </div>
+        
+        <div class="services">
+            
+            <div class="boite_service">
+            <div class="service" id="logo_petit_livreur">
+                <h3> Google play </h3>
+                <a href="https://play.google.com/store/apps/details?id=com.LPL.client&hl=en&gl=US" target="_blank" href="https://apps.apple.com/fr/app/le-petit-livreur/id1447046614" target="_blank"><img src="img/le_petit_livreur.png" alt=""></a>
+            </div>
+
+            
+            <div class="service" id="petit_livreur">
+                <h3> App Store </h3>
+                <a href="https://apps.apple.com/fr/app/le-petit-livreur/id1447046614" target="_blank"> <img src="img/application.png"></a>    
+            </div>
+            
+
+            <div class="service" id="explication_service">
+                <h3> Passez commande !</h3>
+                <p> Téléchargez l'application le petit livreur pour pouvoir passer commande très facilement et très rapidement. Vous pouvez également
+                    nous rejoindre sur notre compte Instagram et notre compte Facebook </p>
+            </div>
+            </div>
+            
+            <div class="boite_service">
+            <div class="service" id="fb" >
+                <h3> Facebook</h1>
+                <a href="https://www.facebook.com/MultipatsTraiteurCamelia" target="_blank"> <img src="img/fb.png"> </a> 
+            </div>
+
+            <div class="service" id="insta" >
+                <h3> Instagram</h1>
+                <a href=" https://www.instagram.com/traiteur_multiplats_cannes/" target="_blank">  <img src="img/icon_insta.png"> </a>     
+            </div>
+            </div>
+
+        </div>
+
+        <p id="contact">Adresse : Avenue Michel Jourdan 61, 06150 Cannes, France <br> <br>Contact : / +33493472790. | &copy; 2022, Multiplats Camélia <p></p>
+        
+    </footer>
+
+    
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
